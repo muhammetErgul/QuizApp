@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Lora:wght@500&display=swap');
+:root {
+    --app-light: #aee6ee;
+    --app-dark: #29b3ca;
+    --app-progress: #6fc3d1;
+    --app-gray: #6f6f6f;
+    --app-gray-light: #6f6f6f50;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #15202B;
+    padding-top: 5rem;
+    /*font-family: "Roboto";*/
+    font-family: 'Lora', serif;
+}
+
+.alertContainer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.alert {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -35px;
+    text-align: center;
+    font-family: 'Bungee Spice', cursive;
+    letter-spacing: 2px;
+}
+
+.quizContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    height: 800px;
+    background-color: #fff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+.quizProgressContainer {
+    width: 70vw;
+    height: 20px;
+    background-color: var(--app-gray-light);
+    border-radius: 15px;
+}
+
+.quizProgress {
+    width: 0%;
+    background-color: var(--app-progress);
+    height: 20px;
+    border-radius: 15px;
+    transition: width 500ms ease-in-out;
+}
+
+.questionBody {
+    width: 70vw;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.questionAnswers {
+    width: inherit;
+}
+
+.questionAnswer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.questionAnswer:hover .text {
+    border-color: var(--app-dark);
+    color: var(--app-dark);
+}
+
+.questionAnswer.selected .text {
+    background-color: var(--app-dark);
+    color: white;
+}
+
+.questionAnswer .choice {
+    width: 5%;
+    background-color: var(--app-dark);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.questionAnswer .text {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    border: 1px solid var(--app-gray-light);
+    padding-left: 2rem;
+    font-size: 1.5rem;
+    color: var(--app-gray);
+}
+
+.quizNextBtn {
+    width: 300px;
+    padding: 10px 0;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: var(--app-dark);
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    letter-spacing: 3px;
+}
+.quizNextBtn:active {
+    scale: 0.97;
+}
+
+.quizModal {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: var(--app-gray-light);
+    z-index: 999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.quizModal.show {
+    display: flex;
+}
+
+.quizModalBody {
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.modalClose {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.modalText {
+    color: var(--app-gray);
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 3rem;
+}
+
+.repeatQuizBtn {
+    width: 200px;
+    padding: 10px 0;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: var(--app-dark);
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 25px;
+}

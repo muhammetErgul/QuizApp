@@ -1,0 +1,132 @@
+[
+    {
+        "id": 1,
+        "text": "Which type of JavaScript language is",
+        "answers": [
+            {
+                "id": 1,
+                "text": "Object-Oriented",
+                "isCorrect": false
+            },
+            {
+                "id": 2,
+                "text": "Object-Based",
+                "isCorrect": true
+            },
+            {
+                "id": 3,
+                "text": "Assembly-Language",
+                "isCorrect": false
+            },
+            {
+                "id": 4,
+                "text": "High-Level",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "text": "Which one of the following also known as Conditional Expression",
+        "answers": [
+            {
+                "id": 1,
+                "text": "Alternative to if-else",
+                "isCorrect": false
+            },
+            {
+                "id": 2,
+                "text": "Switch statement",
+                "isCorrect": false
+            },
+            {
+                "id": 3,
+                "text": "If-then-else statement",
+                "isCorrect": false
+            },
+            {
+                "id": 4,
+                "text": "immediate if",
+                "isCorrect": true
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "text": "The 'function' and 'var' are known as:",
+        "answers": [
+            {
+                "id": 1,
+                "text": "Keywords",
+                "isCorrect": false
+            },
+            {
+                "id": 2,
+                "text": "Data types",
+                "isCorrect": false
+            },
+            {
+                "id": 3,
+                "text": "Declaration statements",
+                "isCorrect": true
+            },
+            {
+                "id": 4,
+                "text": "Prototypes",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "text": "Which of the following variables takes precedence over the others if the names are the same?",
+        "answers": [
+            {
+                "id": 1,
+                "text": "Global variable",
+                "isCorrect": false
+            },
+            {
+                "id": 2,
+                "text": "The local element",
+                "isCorrect": true
+            },
+            {
+                "id": 3,
+                "text": "The two of the above",
+                "isCorrect": false
+            },
+            {
+                "id": 4,
+                "text": "None of the above",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "text": "In the JavaScript, which one of the following is not considered as an error:",
+        "answers": [
+            {
+                "id": 1,
+                "text": "Syntax error",
+                "isCorrect": false
+            },
+            {
+                "id": 2,
+                "text": "Missing of semicolons",
+                "isCorrect": true
+            },
+            {
+                "id": 3,
+                "text": "Division by zero",
+                "isCorrect": false
+            },
+            {
+                "id": 4,
+                "text": "Missing of Bracket",
+                "isCorrect": false
+            }
+        ]
+    }
+]
